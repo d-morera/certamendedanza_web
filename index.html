@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certamen de Danza · Colegio Mayor Santa María de Europa</title>
+  <meta name="description" content="Certamen de Danza organizado en Madrid por el Colegio Mayor Santa María de Europa · 9 de abril." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background effects -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+  </div>
+
+  <!-- Top progress bar -->
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav__inner container">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <span class="brand__mark">
+        <img src="assets/img/logo.png" alt="Logo">
+        </span>
+        <span class="brand__text">
+          <span class="brand__title">Certamen de Danza</span>
+          <span class="brand__sub">Colegio Mayor Santa María de Europa</span>
+        </span>
+      </a>
+
+      <nav class="menu" aria-label="Secciones">
+        <a href="#evento">Evento</a>
+        <a href="#jueces">Jueces</a>
+        <a href="#concursantes">Concursantes</a>
+        <a href="#patrocinios">Patrocinios</a>
+        <a href="#localizacion">Local</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span class="icon">☾</span>
+          <span class="hide-sm">Tema</span>
+        </button>
+        <a class="btn btn--primary" href="#inscripcion">Inscripción</a>
+
+        <button class="burger" id="burger" type="button" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" aria-label="Menú móvil">
+      <a href="#evento">Evento</a>
+      <a href="#jueces">Jueces</a>
+      <a href="#concursantes">Concursantes</a>
+      <a href="#patrocinios">Patrocinios</a>
+      <a href="#localizacion">Local</a>
+      <a class="btn btn--primary" href="#inscripcion">Inscripción</a>
+    </div>
+  </header>
+
+<section class="cover" aria-label="Portada">
+  <div class="cover__bg" aria-hidden="true"></div>
+
+  <div class="container cover__inner">
+    <p class="pill cover__pill">
+      <span class="dot"></span>
+      Madrid · 9 de abril
+    </p>
+
+    <h1 class="cover__title">Certamen de Danza 2026</h1>
+    <p class="cover__subtitle">Colegio Mayor Santa María de Europa</p>
+
+    <div class="cover__cta">
+      <a class="btn btn--primary" href="#inscripcion">Inscripción</a>
+      <a class="btn btn--ghost" href="#evento">Ver detalles</a>
+    </div>
+  </div>
+
+  <div class="cover__fade" aria-hidden="true"></div>
+</section>
+
+  <!-- Hero -->
+  <main id="top" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="pill">
+          <span class="dot"></span>
+          9 de abril · Madrid · Apertura 17:00
+        </p>
+
+        <h1 class="display">
+          Elegancia en escena.
+          <span class="accent">Talento</span> en competencia.
+        </h1>
+
+        <p class="lead">
+          El Certamen de Danza del Colegio Mayor Santa María de Europa reúne a concursantes,
+          jueces y patrocinadores en una tarde de actuación, técnica y emoción.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#inscripcion">Quiero participar</a>
+          <a class="btn btn--ghost" href="#localizacion">Ver local</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat card mini">
+            <div class="stat__kpi">3</div>
+            <div class="stat__label">Premios</div>
+          </div>
+          <div class="stat card mini">
+            <div class="stat__kpi">—</div>
+            <div class="stat__label">Jueces invitados</div>
+          </div>
+          <div class="stat card mini">
+            <div class="stat__kpi">∞</div>
+            <div class="stat__label">Energía</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__panel card tilt" data-tilt>
+        <div class="panel__top">
+          <h2 class="panel__title">Programa</h2>
+          <p class="panel__hint">Pasa el ratón · efectos interactivos</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="time">16:30</span>
+            <span class="what">Recepción y acreditación</span>
+          </li>
+          <li class="timeline__item">
+            <span class="time">17:00</span>
+            <span class="what">Apertura del certamen</span>
+          </li>
+          <li class="timeline__item">
+            <span class="time">17:15</span>
+            <span class="what">Actuaciones (fase única)</span>
+          </li>
+          <li class="timeline__item">
+            <span class="time">19:15</span>
+            <span class="what">Deliberación del jurado</span>
+          </li>
+          <li class="timeline__item">
+            <span class="time">19:45</span>
+            <span class="what">Entrega de premios</span>
+          </li>
+        </ol>
+
+        <div class="panel__footer">
+          <button class="btn btn--ghost" id="copyInfo" type="button">
+            Copiar datos del evento
+          </button>
+          <span class="copied" id="copiedBadge" aria-live="polite"></span>
+        </div>
+      </aside>
+    </div>
+
+    <div class="hero__marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+        <span>Certamen Danza · Madrid · 9 de abril · CMU Europa</span>
+      </div>
+    </div>
+  </main>
+
+<figure class="photo card hoverline reveal">
+  <img src="assets/img/galeria-1.jpg" alt="Actuación en el certamen" loading="lazy">
+  <figcaption class="small muted">Pie de foto (opcional)</figcaption>
+</figure>
+
+  <!-- Section: Evento -->
+  <section id="evento" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">El evento</h2>
+        <p class="muted">Información esencial: fecha, formato, criterios y premios.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card hoverline reveal">
+          <h3 class="h3">Fecha y horario</h3>
+          <p>9 de abril · Apertura 17:00 · Duración estimada 2–3h.</p>
+          <div class="chips">
+            <span class="chip">Madrid</span>
+            <span class="chip">Tarde</span>
+            <span class="chip">Escenario</span>
+          </div>
+        </article>
+
+        <article class="card hoverline reveal">
+          <h3 class="h3">Formato</h3>
+          <p>Actuación por concursante/pareja/grupo. Tiempo por pieza configurable según categoría.</p>
+          <ul class="list">
+            <li>Entrada y salida fluida</li>
+            <li>Sonido preparado</li>
+            <li>Deliberación final</li>
+          </ul>
+        </article>
+
+        <article class="card hoverline reveal">
+          <h3 class="h3">Criterios</h3>
+          <p>Valoración artística y técnica, musicalidad, presencia escénica y originalidad.</p>
+          <div class="meter">
+            <span style="--w:78%"></span>
+          </div>
+          <p class="small muted">Tip: cuida transiciones y limpieza de movimientos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Jueces -->
+  <section id="jueces" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Jueces</h2>
+        <p class="muted">Sustituye nombres, bio y especialidad cuando los tengáis confirmados.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card judge tilt reveal" data-tilt>
+          <div class="avatar" aria-hidden="true">J1</div>
+          <h3 class="h3">Nombre Apellido</h3>
+          <p class="muted">Especialidad · Trayectoria · Compañía / formación</p>
+          <div class="chips">
+            <span class="chip">Técnica</span>
+            <span class="chip">Composición</span>
+          </div>
+        </article>
+
+        <article class="card judge tilt reveal" data-tilt>
+          <div class="avatar" aria-hidden="true">J2</div>
+          <h3 class="h3">Nombre Apellido</h3>
+          <p class="muted">Especialidad · Trayectoria · Docencia / escena</p>
+          <div class="chips">
+            <span class="chip">Musicalidad</span>
+            <span class="chip">Interpretación</span>
+          </div>
+        </article>
+
+        <article class="card judge tilt reveal" data-tilt>
+          <div class="avatar" aria-hidden="true">J3</div>
+          <h3 class="h3">Nombre Apellido</h3>
+          <p class="muted">Especialidad · Trayectoria · Coreografía</p>
+          <div class="chips">
+            <span class="chip">Creatividad</span>
+            <span class="chip">Escena</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Concursantes -->
+  <section id="concursantes" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Concursantes</h2>
+        <p class="muted">Listado dinámico (filtrado) para mostrar categorías o nombres.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="field">
+          <label for="q" class="small muted">Buscar</label>
+          <input id="q" type="text" placeholder="Nombre, grupo o estilo..." />
+        </div>
+        <div class="field">
+          <label for="cat" class="small muted">Categoría</label>
+          <select id="cat">
+            <option value="all">Todas</option>
+            <option value="solo">Solo</option>
+            <option value="duo">Dúo</option>
+            <option value="grupo">Grupo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid--3" id="contestantsGrid" aria-live="polite"></div>
+
+      <p class="small muted">
+        *Los ejemplos son de demo. En <code>script.js</code> puedes editar el array <code>contestants</code>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section: Patrocinios -->
+  <section id="patrocinios" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Patrocinios</h2>
+        <p class="muted">Espacios para logos y beneficios por nivel (Oro / Plata / Apoyo).</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card sponsor reveal">
+          <div class="badge badge--gold">Oro</div>
+          <h3 class="h3">Patrocinador principal</h3>
+          <p class="muted">Logo + mención + presencia en escenario + redes.</p>
+        </article>
+
+        <article class="card sponsor reveal">
+          <div class="badge badge--silver">Plata</div>
+          <h3 class="h3">Patrocinador</h3>
+          <p class="muted">Logo + mención + material promocional.</p>
+        </article>
+
+        <article class="card sponsor reveal">
+          <div class="badge badge--support">Apoyo</div>
+          <h3 class="h3">Colaborador</h3>
+          <p class="muted">Mención y presencia en web.</p>
+        </article>
+      </div>
+
+<section id="localizacion" class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="h2">Local</h2>
+      <p class="muted">C. Pintor el Greco, 2 · Moncloa - Aravaca · 28040 Madrid</p>
+    </div>
+
+    <div class="grid grid--2">
+      <!-- Foto grande -->
+      <article class="card hoverline reveal local-photo">
+        <img
+          src="assets/img/salon-de-actos.jpeg"
+          alt="Local del certamen de danza"
+          loading="lazy"
+        />
+
+        <div class="local-photo__meta">
+          <h3 class="h3">Ubicación</h3>
+          <p class="muted">
+            C. Pintor el Greco, 2<br/>
+            Moncloa - Aravaca, 28040 Madrid
+          </p>
+
+          <div class="local-actions">
+            <a class="btn btn--primary" href="https://www.google.com/maps?q=C.%20Pintor%20el%20Greco,%202,%2028040%20Madrid" target="_blank" rel="noopener">
+              Abrir en Google Maps
+            </a>
+            <a class="btn btn--ghost" href="#inscripcion">Ir a inscripción</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mapa visible -->
+      <article class="card hoverline reveal map-embed">
+        <h3 class="h3">Mapa</h3>
+        <p class="muted small">Puedes hacer zoom y arrastrar el mapa.</p>
+
+        <div class="mapframe">
+          <iframe
+            title="Mapa - C. Pintor el Greco, 2, 28040 Madrid"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=C.%20Pintor%20el%20Greco%202%2C%2028040%20Madrid&output=embed"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Opcional: desplegable -->
+        <details class="details">
+          <summary>Ver información de acceso</summary>
+          <div class="details__body">
+            <ul class="list">
+              <li><strong>Dirección:</strong> C. Pintor el Greco, 2, Moncloa - Aravaca, 28040 Madrid</li>
+              <li><strong>Recomendación:</strong> llega con 10–15 min de margen.</li>
+              <li><strong>Acceso:</strong> si hay backstage/sala anexa, indícalo aquí.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+    </div>
+  </div>
+</section>
+
+      <div class="card hoverline reveal" id="inscripcion">
+        <h3 class="h3">Inscripción</h3>
+        <p class="muted">Completa el formulario para concursar o patrocinar.</p>
+
+        <div class="gform">
+            <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScbi_g9LH1Zg5CVlzfu49ff1tFwOSwvelMFApomZypHL87f2Q/viewform?embedded=true"
+            title="Formulario de inscripción"
+            loading="lazy"
+            allowfullscreen
+            ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Localización -->
+
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__mark">SME</span>
+          <span class="brand__text">
+            <span class="brand__title">Certamen de Danza</span>
+            <span class="brand__sub">Colegio Mayor Santa María de Europa</span>
+          </span>
+        </div>
+        <p class="small muted">© <span id="year"></span> · Madrid · 9 de abril</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#evento">Evento</a>
+        <a href="#jueces">Jueces</a>
+        <a href="#concursantes">Concursantes</a>
+        <a href="#patrocinios">Patrocinios</a>
+        <a href="#localizacion">Local</a>
+      </div>
+
+      <div class="footer__note">
+        <p class="small muted">
+          Hecha para publicar gratis (GitHub Pages). Animaciones optimizadas y accesibles.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
