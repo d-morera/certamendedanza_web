@@ -46,7 +46,7 @@
       </nav>
 
       <div class="nav__actions">
-        <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Cambiar tema">
+        <button class="btn btn--primary" id="themeToggle" type="button" aria-label="Cambiar tema">
           <span class="icon">☾</span>
           <span class="hide-sm">Tema</span>
         </button>
@@ -81,7 +81,7 @@
     <p class="cover__subtitle">Colegio Mayor Santa María de Europa</p>
 
     <div class="cover__cta">
-      <a class="btn btn--primary" href="#inscripcion">Inscripción</a>
+      <a class="btn btn--ghost" href="#inscripcion">Inscripción</a>
       <a class="btn btn--ghost" href="#evento">Ver detalles</a>
     </div>
   </div>
@@ -110,7 +110,7 @@
 
         <div class="hero__cta">
           <a class="btn btn--primary" href="#inscripcion">Quiero participar</a>
-          <a class="btn btn--ghost" href="#localizacion">Ver local</a>
+          <a class="btn btn--primary" href="#localizacion">Ver local</a>
         </div>
 
         <div class="hero__stats">
@@ -132,7 +132,7 @@
       <aside class="hero__panel card tilt" data-tilt>
         <div class="panel__top">
           <h2 class="panel__title">Programa</h2>
-          <p class="panel__hint">Pasa el ratón · efectos interactivos</p>
+          <p class="panel__hint">🗓️</p>
         </div>
 
         <ol class="timeline">
@@ -159,7 +159,7 @@
         </ol>
 
         <div class="panel__footer">
-          <button class="btn btn--ghost" id="copyInfo" type="button">
+          <button class="btn btn--primary" id="copyInfo" type="button">
             Copiar datos del evento
           </button>
           <span class="copied" id="copiedBadge" aria-live="polite"></span>
@@ -184,7 +184,7 @@
 
 <figure class="photo card hoverline reveal">
   <img src="assets/img/galeria-1.jpg" alt="Actuación en el certamen" loading="lazy">
-  <figcaption class="small muted">Pie de foto (opcional)</figcaption>
+  <figcaption class="small muted">Pie de foto</figcaption>
 </figure>
 
   <!-- Section: Evento -->
@@ -192,7 +192,6 @@
     <div class="container">
       <div class="section__head">
         <h2 class="h2">El evento</h2>
-        <p class="muted">Información esencial: fecha, formato, criterios y premios.</p>
       </div>
 
       <div class="grid grid--3">
@@ -233,13 +232,13 @@
     <div class="container">
       <div class="section__head">
         <h2 class="h2">Jueces</h2>
-        <p class="muted">Sustituye nombres, bio y especialidad cuando los tengáis confirmados.</p>
+        <p class="muted">Jueces confirmados próximamente...</p>
       </div>
 
       <div class="grid grid--3">
         <article class="card judge tilt reveal" data-tilt>
           <div class="avatar" aria-hidden="true">J1</div>
-          <h3 class="h3">Nombre Apellido</h3>
+          <h3 class="h3">Por Anunciar</h3>
           <p class="muted">Especialidad · Trayectoria · Compañía / formación</p>
           <div class="chips">
             <span class="chip">Técnica</span>
@@ -249,7 +248,7 @@
 
         <article class="card judge tilt reveal" data-tilt>
           <div class="avatar" aria-hidden="true">J2</div>
-          <h3 class="h3">Nombre Apellido</h3>
+          <h3 class="h3">Por Anunciar</h3>
           <p class="muted">Especialidad · Trayectoria · Docencia / escena</p>
           <div class="chips">
             <span class="chip">Musicalidad</span>
@@ -259,7 +258,7 @@
 
         <article class="card judge tilt reveal" data-tilt>
           <div class="avatar" aria-hidden="true">J3</div>
-          <h3 class="h3">Nombre Apellido</h3>
+          <h3 class="h3">Por Anunciar</h3>
           <p class="muted">Especialidad · Trayectoria · Coreografía</p>
           <div class="chips">
             <span class="chip">Creatividad</span>
@@ -275,7 +274,6 @@
     <div class="container">
       <div class="section__head">
         <h2 class="h2">Concursantes</h2>
-        <p class="muted">Listado dinámico (filtrado) para mostrar categorías o nombres.</p>
       </div>
 
       <div class="toolbar">
@@ -295,10 +293,6 @@
       </div>
 
       <div class="grid grid--3" id="contestantsGrid" aria-live="polite"></div>
-
-      <p class="small muted">
-        *Los ejemplos son de demo. En <code>script.js</code> puedes editar el array <code>contestants</code>.
-      </p>
     </div>
   </section>
 
@@ -307,7 +301,7 @@
     <div class="container">
       <div class="section__head">
         <h2 class="h2">Patrocinios</h2>
-        <p class="muted">Espacios para logos y beneficios por nivel (Oro / Plata / Apoyo).</p>
+        <p class="muted">Por definir...</p>
       </div>
 
       <div class="grid grid--3">
@@ -333,8 +327,8 @@
 <section id="localizacion" class="section">
   <div class="container">
     <div class="section__head">
-      <h2 class="h2">Local</h2>
-      <p class="muted">C. Pintor el Greco, 2 · Moncloa - Aravaca · 28040 Madrid</p>
+      <h2 class="h2">Anfiteatro</h2>
+      <p class="muted">Facultad Bellas Artes UCM</p>
     </div>
 
     <div class="grid grid--2">
@@ -357,7 +351,7 @@
             <a class="btn btn--primary" href="https://www.google.com/maps?q=C.%20Pintor%20el%20Greco,%202,%2028040%20Madrid" target="_blank" rel="noopener">
               Abrir en Google Maps
             </a>
-            <a class="btn btn--ghost" href="#inscripcion">Ir a inscripción</a>
+            <a class="btn btn--primary" href="#inscripcion">Ir a inscripción</a>
           </div>
         </div>
       </article>
@@ -384,7 +378,7 @@
             <ul class="list">
               <li><strong>Dirección:</strong> C. Pintor el Greco, 2, Moncloa - Aravaca, 28040 Madrid</li>
               <li><strong>Recomendación:</strong> llega con 10–15 min de margen.</li>
-              <li><strong>Acceso:</strong> si hay backstage/sala anexa, indícalo aquí.</li>
+              <li><strong>Acceso:</strong> backstage para participantes y personal autorizado.</li>
             </ul>
           </div>
         </details>
@@ -395,7 +389,7 @@
 
       <div class="card hoverline reveal" id="inscripcion">
         <h3 class="h3">Inscripción</h3>
-        <p class="muted">Completa el formulario para concursar o patrocinar.</p>
+        <p class="muted">Completa el formulario para concursar</p>
 
         <div class="gform">
             <iframe
@@ -416,7 +410,9 @@
     <div class="container footer__grid">
       <div>
         <div class="brand brand--footer">
-          <span class="brand__mark">SME</span>
+          <span class="brand__mark">
+            <img src="assets/img/logo.png" alt="Logo">
+            </span>
           <span class="brand__text">
             <span class="brand__title">Certamen de Danza</span>
             <span class="brand__sub">Colegio Mayor Santa María de Europa</span>
@@ -435,7 +431,10 @@
 
       <div class="footer__note">
         <p class="small muted">
-          Hecha para publicar gratis (GitHub Pages). Animaciones optimizadas y accesibles.
+          Instagram: <a href="https://www.instagram.com/certamendanzaeuropa" target="_blank" rel="noopener">@certamendanzaeuropa</a><br/>
+        </p>
+        <p class="small muted">
+          Mail: <a href="mailto:info@certamendanzaeuropa.com">certamendanzaeuropa@gmail.com</a>
         </p>
       </div>
     </div>
